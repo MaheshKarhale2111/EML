@@ -30,11 +30,17 @@
  }
 
  .top-banner{
-    padding: 8rem 0 9rem;
+    padding: 8rem  9rem;
 }
 .logo-img{
     padding: 15% 0;
 
 }
  
+
+@media (max-width: 576px){
+    .container{
+           padding: 3% 5% 5% 3%;
+    }
+}
 }
