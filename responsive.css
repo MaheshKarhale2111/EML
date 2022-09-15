@@ -17,6 +17,9 @@
         padding: 30% 0;
 
     }
+    .top-banner{
+        padding: 8rem 0 5rem;
+    }
 }
 
 
@@ -24,6 +27,14 @@
 @media (max-width: 767px) {
  h1 { 
     font-size: 2rem;
-    color: blueviolet;
  }
+
+ .top-banner{
+    padding: 8rem 0 9rem;
+}
+.logo-img{
+    padding: 15% 0;
+
+}
+ 
 }
