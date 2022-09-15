@@ -1,0 +1,29 @@
+@media (max-width: 991px){
+    h1{font-size : 2.1rem ;}
+    .logo-img {
+        padding: 50% 0;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    .home-buttons{
+        margin-bottom: 0%;
+    }
+    .col-md-6{
+        /* background-color: navajowhite; */
+        padding-bottom: 0px;
+    }
+    .logo-img{
+        padding: 30% 0;
+
+    }
+}
+
+
+
+@media (max-width: 767px) {
+ h1 { 
+    font-size: 2rem;
+    color: blueviolet;
+ }
+}

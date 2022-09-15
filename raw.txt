@@ -1,0 +1,5 @@
+     #070434 - Dark Blue Main
+     #050248 - Dark Blue Background
+
+     #fbb400 - Gold Bright
+     #cc941c - Gold Normal
