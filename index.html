@@ -12,8 +12,11 @@
 
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Animate on scroll css  -->
+    <link rel="stylesheet" href="css/aos.css">
 
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico">
@@ -28,7 +31,7 @@
         <nav class="navbar navbar-expand-md navigation-wrap">
             <div class="container">
                 <a href="" class="navbar-brand h1 mb-0">
-                    <!-- <img src="./images/logo/image.png" alt="brand logo" class="img-fluid" /> -->
+                    <img src="./images/logo/image.png" alt="brand logo" class="img-fluid" />
                     <!-- <span id="brand-name">EML</span> -->
                 </a>
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
@@ -37,12 +40,15 @@
                     <!-- fa and fa-stream is for font awesome icon -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                    <ul class=" navbar-nav ms-auto ">
+                        <li class="nav-item nav-active">
                             <a href="#home" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">Speakers</a>
+                            <a href="./speakers.html" class="nav-link">Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Team</a>
                         </li>
                         <li class="nav-item">
                             <a href="#home" class="nav-link">Gallery</a>
@@ -58,30 +64,30 @@
 
 
     <section id="home">
-        <div class="container-fluid px-0 top-banner">
+        <div class="container-fluid px-0 top-banner fixedElement">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 order-md-1 order-2">
+                    <div class="col-md-6 order-md-1 order-2" data-aos = "fade-in">
                         <h1>Welcome to EXTRA MURAL LECTURES</h1>
-                        <h2>the official lecture body of IIT Madras.</h2>
+                        <h2>The Offcial Lec-Dem Body of IIT MADRAS</h2>
                         </p>
                         <div class="home-buttons mt-5">
                             <button class="btn btn-lg main-btn">Speakers</button>
                             <button class="btn btn-lg fill-btn ms-4">Contact Us</button>
                         </div>
                     </div>
-                    <div class=" col-md-6 order-md-2 order-1">
+                    <div class=" col-md-6 order-md-2 order-1 " data-aos = "fade-left">
                         <img class="logo-img img-fluid" src="./images/logo/image.png" alt="">
                     </div>
                 </div>
             </div>
     </section>
 
-    <section id="banner">
+    <section id="latest-banner">
         <div class="container banner">
             <h2 class="mb-4">Latest in EML </h2>
             <div class="row">
-                <div class="col-lg-6 order-lg-1 order-2">
+                <div class="col-lg-6 order-lg-1 order-2" data-aos = "fade-in">
                     <h3 class="mt-4">Self Sufficiency in Defense</h3>
                     <h3>Dr Ajay Kumar </h3>
                     <h5 class="mt-3">“Why do you think the army is important?” is how Dr. Ajay Kumar opened the first Speaktember EML
@@ -149,7 +155,7 @@
 
 
 
-
+    
 
 
 
@@ -179,8 +185,20 @@
 
 
 
+    <!-- Animate on scroll JS -->
+    <script src="js/index.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
 
-    <script src="index.js"></script>
+            offset: 50,
+            duration: 1500,
+            easing: 'ease-out',
+            once :'false'
+            
+        }
+        );
+      </script>
 
 </body>
 

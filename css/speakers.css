@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  overflow-x: hidden;
+}
+body{
+  background-color: #080434;
+  /* display: flex; */
+}
+header a:hover {
+  text-decoration: none;
+  color: var(--primary-color) !important;
+  /* background-color: aqua; */
+}
+
+:root {
+  --primary-color: #050248;
+  --secondary-color: #ca7917;
+  --thired-color: #f98169;
+  --white-color: #fff;
+  --text-color: rgb(37, 37, 46);
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: "Roboto Slab", serif;
+  --secondary-font: "Josefin Sans", sans-serif;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  /* For fonts, setting font-size: 100% will make your text 100% of the base font size set in the browser. Most browsers default to a 16px base font size, so 100% of that would be 16px , and 50% would be 8px  */
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: var(--white-color);
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  /* margin-bottom: 3rem; */
+  text-transform: capitalize; /* this will capitalize first letter */
+  color: var(--secondary-color);
+  line-height: 3rem;
+  font-family: var(--secondry-font);
+}
+h4 {
+  font-size: 1.125rem; /* 1 rem = 16 px */
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize; /* this will capitalize first letter */
+  color: var(--secondary-color);
+  line-height: 3rem;
+  font-family: var(--secondry-font);
+}
+/* h5 {
+  color: var(--white-color);
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+} */
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 0.375rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #cc941c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+/* ==============================================
+    Buttons 
+============================================== */
+
+.main-btn {
+  color: white;
+  background-color: var(--text-color);
+  /* border: 0.5px solid #cc941c; */
+  border-radius: 4px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  background-color: rgba(37, 37, 46, 0.795);
+  color: white;
+  border: 0.7px solid #cc941c;
+}
+.fill-btn {
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #cc941c;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+}
+
+.fill-btn:hover {
+  background-color: #030a8c;
+  color: white;
+  border-radius: 4px;
+  border: 0.7px solid #cc941c;
+}
+
+/* ======================================
+ Top banner 
+======================================== */
+.first-banner {
+  background: url(../images/Banner/top-banner.png);
+    background-size: cover;
+    background-attachment: fixed;
+   width: 100%;
+   padding: 14rem 0 11rem;
+}
+.first-banner img {
+  width: 60%;
+  transform: translateY(50%);
+  /* display: none; */
+}
+/* =========================================
+wrapper class 
+====================================== */
+
+.first {
+  margin-top: 15rem;
+}
+.my-container{
+  max-width: 80%;
+  /* justify-content: center; */
+  margin: auto;
+  
+  /* padding: 0 15rem;  */
+}
+.wrapper {
+  padding: 0rem 0;
+  margin: 3rem 0;
+  
+}
+.speaker-container{
+  width: 85%;
+  margin: auto;
+}
+.wrapper .speaker-container{
+  background-image: url(../images/speaker/bg1.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #f98169;
+  border-radius: 9px;
+}
+.wrapper .img-fluid {
+  width: auto;
+}
+.wrapper h2 {
+  margin-top: 1rem;
+}
+.wrapper .image-class{
+  display: flex;
+  justify-content: center;
+}
+.wrapper .row{
+  padding: 3rem 0;
+}
+.wrapper:nth-child(even) .speaker-text{
+padding-left: 2rem;
+}
+
+.speaker-text{
+  padding: 0px 10px;
+  color: var(--text-color);
+  /* text-transform: capitalize; */
+  font-family: var(--secondry-font);
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+.speaker-text h2{
+  color: #130f3c !important;
+}
+.big-wrapper{
+  margin-top: 5rem;
+  background-color: #e2e1e1da;
+  padding: 2rem 5px 10rem 5px;
+  border-radius: 9px ;
+}
+.big-wrapper .text{
+  padding: 0 2rem 0 2rem;
+}
+
+/* =======================================
+Speakers 
+========================================= */
+
+.second {
+  /* background-image: url(../images/speaker/try3.png); */
+  
+  /* background-repeat: no-repeat; */
+  /* background-position: 10%; */
+  /* width: 100%; */
+  /* height: auto; */
+  /* background-size: 40%; */
+  /* background-attachment: fixed; */
+}
+
+/* .speaker-text {
+    padding: 30% 0;
+    color: white;
+ } */
+
+@media (max-width: 991px) {
+  .wrapper .img-fluid {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin: auto;
+    display: block;
+  
+    /* margin-top: 2rem; */
+    /* margin-bottom: auto; */
+  }
+ 
+  .wrapper h5 {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .my-container{
+    /* padding: 0 8rem; */
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .top-banner {
+    padding: 8rem 9rem;
+  }
+  .logo-img {
+    padding: 15% 0;
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      padding: 3% 5% 5% 3%;
+    }
+  }
+}
